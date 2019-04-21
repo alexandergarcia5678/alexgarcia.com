@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Website Designs</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/hoc0jxo.css">
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <script>
+        $(function(){
+        $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    
+    <script>
+        $(function(){
+        $("#foot-placeholder").load("footer.html");
+        });
+    </script>
+    
+    <style>
+            a {
+                    background: none;
+                    transition: background-color .3s ease-out, color .2s ease-out, transform .2s ease-out;
+            }
+            a:hover {
+            /*    transform: translateX(10px); */
+                  background-color: #F16144;
+            /*      background-color: #482082;*/
+            /*    color: black;*/
+            }
+    </style>
+</head>
+<header role="banner">
+  <div id="nav-placeholder"></div>
+</header>
+    <main>
+    <body>
+        <h1>Web Design</h1>
+        <div class="gallery">
+            <div class="gimg">img1</div>
+            <div class="gimg">img2</div>
+            <div class="gimg">img3</div>
+            <div class="gimg">img4</div>
+            <div class="gimg">img5</div>
+        </div>
+    </body>
+    </main>
+    
+    <div id="foot-placeholder"></div>
+</html>

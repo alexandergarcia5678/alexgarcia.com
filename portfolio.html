@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Designed by alex garcia portfolio website</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/hoc0jxo.css">
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <script>
+        $(function(){
+        $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    
+    <script>
+        $(function(){
+        $("#foot-placeholder").load("footer.html");
+        });
+    </script>
+    
+    <style>
+            a {
+                    background: none;
+                    transition: background-color .3s ease-out, color .2s ease-out, transform .2s ease-out;
+            }
+            .nav:hover, footer a:hover {
+            /*    transform: translateX(10px); */
+                  background-color: #F16144;
+            /*      background-color: #482082;*/
+            /*    color: black;*/
+        }
+    </style>
+</head>
+<header role="banner">
+  <div id="nav-placeholder"></div>
+</header>
+    <main>
+    <body>
+        <h1>My Portfolio</h1>
+        <div>
+            
+            <h2 class="title1">Web Design</h2>
+            <div class="web">
+                <div><div class="item1"><a href="Project_Favorite%20Things%20Website.html"><img src="Images/Mockup_Fevorite%20Things%20Website.psd" class="gimg1" title="Favorite Things Web Design Project" alt="Favorite Things Web Design Project"></a></div></div>
+                
+                <div><div class="item2"><a href="Project_Supporting%20Heroes.html"><img src="Images/Mockup_Square_Supporting%20Heroes.psd" class="gimg" title="Supporting Heroes Web Design Project" alt="Supporting Heroes Web Design Project"></a></div></div>
+                
+<!--    this next part has an extra div for possible text on card overlay-->
+                
+                <div><div class="item3"><a href="Project_Ad%20Council.html"><img src="Images/Mockup_Square_The%20Sting%20Oporation.psd" class="gimg" title="Ad Council Web Design Project" alt="Ad Council Web Design Project"></a></div></div>
+                
+            </div>
+            
+            <h2 class="title2">Series</h2>
+            <div class="series">
+                <div><div><a><img src="Images/Mockup_Daily%20Poster_Day%2024.png" class="gimg"></a></div></div>
+                <div><div><a href="Project_Daily%20Poster%20Project.html"><img src="Images/Mockup_Daily%20Poster_Day%2025.png" class="gimg"></a></div></div>
+            </div>
+            
+            <h2 class="title3">Print</h2>
+            <div>
+                <div class="item6"><h2>Img1</h2></div>
+            </div>
+            
+        </div>
+    </body>
+    </main>
+    <div id="foot-placeholder"></div>
+</html>
