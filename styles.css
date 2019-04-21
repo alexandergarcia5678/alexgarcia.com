@@ -107,13 +107,17 @@ Header {
     font-weight: 400;
     font-style: normal;
     display: block;
-    background-color: black;
+    background-color: hsla(0, 0%, 12.5%, 2%);
     margin: 0;
     height: 75px;
     top: 0;
     width: 100%;
     position: fixed;
     z-index: 10;
+    transition: background-color .3s ease-out, color .2s ease-out, transform .2s ease-out;
+}
+Header:hover {
+    background-color: hsla(0, 0%, 12.5%, 100%)
 }
 
 .nav {
@@ -121,7 +125,8 @@ Header {
     display: inline-block;
     position: relative;
     font-size: 1.3em;
-    color: white;
+    font-weight: 500;
+    color: black;
     padding-top: 40px;
     padding-left: 25px;
     padding-right: 25px;
@@ -132,6 +137,10 @@ Header {
     bottom: 55px;
 }
 
+header:hover .nav{
+    color: white;
+}
+
 .logo {
     margin-left: 50px;
     position: relative;
@@ -139,6 +148,7 @@ Header {
     height: 0;
     transform: scale(.5);
     top: 15px;
+    padding-right: 56%
 }
 
 /*grid section*/
@@ -153,6 +163,13 @@ Header {
     grid-gap: 6%;
     justify-content: center;
 /*    object-fit: cover;*/
+}
+.title1{
+    background-color: white;
+}
+.title1:hover{
+    background-color: #F16144;
+    color: white;
 }
 
 
