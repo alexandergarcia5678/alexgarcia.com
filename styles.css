@@ -163,10 +163,10 @@ Header {
 .series{
     grid-area: series;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
     grid-template-areas: 
-        '1 2 3';
+        '1 2';
     margin-left: 5%;
     margin-right: 5%;
     grid-gap: 6%;
