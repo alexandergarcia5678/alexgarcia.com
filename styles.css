@@ -29,7 +29,7 @@ body{
     height: 700px;
     width: 100%;
     display: flex;
-    background: hsl(0, 0%, 12.5%);
+    background: hsl(0, 00%, 90%);
     position: relative;
     align-items:center;
 /*    background-position: center;*/
@@ -53,12 +53,12 @@ form{
     margin-left: 28%;
 }
 /*TYPOGRAPHY*/
-h2,h4,p {
+h2,h4,p,li {
     margin-left: 35%;
     margin-right: 35%;
     font-family: futura, sans-serif;
 }
-p {
+p,li {
     font-weight: 400;
     font-style: normal;
 /*    text-align-last: center;*/
@@ -79,7 +79,7 @@ h1, h3{
     line-height: 1.2em;
 /*    position: absolute;*/
 }
-h1:after{
+/*h1:after{*/
     content: '';
     display: block;
     width: 100%;
@@ -100,10 +100,16 @@ h3{
     margin-top: -10px;
     padding-bottom: 1.5em;
 }
-
+h5{
+    text-align: center;
+    font-family: futura, sans-serif;
+    font-weight: 500;
+    font-size: 2em
+}
 .artimg{
     width: 30%;
     margin-left: 35%;
+    margin-right: 35%;
 } 
 .caption {
     margin-left: 35%;
@@ -314,5 +320,22 @@ transition: background-color .3s ease-out, color .2s ease-out, transform .2s eas
 }
 
 /*RESPONSIVE RULES*/
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 900px) {
+    
+    .homegallery, .gallery, .web{
+        grid-template-columns: 100%;
+        grid-template-rows: ;
+        grid-template-areas: 
+            'top'
+            'midle'
+            'nextmidle'
+            'anmidle';
+            
+    }
+    .series{
+        padding-top: 500px;
+        grid-template-columns: 100%;
+    }
+    .logo{margin: 0;left: 76px}
+    header{height: 150px;}
 }
