@@ -133,7 +133,7 @@ Header {
     display: block;
     background-color: hsla(0, 0%, 12.5%, 10%);
     margin: 0;
-    height: 75px;
+    height: 8%;
     top: 0;
     width: 100%;
     position: fixed;
@@ -143,7 +143,10 @@ Header {
 Header:hover {
     background-color: hsla(0, 0%, 12.5%, 100%)
 }
-
+.menu{
+    display: inline-block;
+    float: right;
+}
 .nav {
     margin: 0;
     display: inline-block;
@@ -158,7 +161,7 @@ Header:hover {
     text-decoration: none;
     background: none;
     transition: background-color .3s ease-out, color .2s ease-out, transform .2s ease-out;
-    bottom: 55px;
+    bottom: 15px;
 }
 
 header:hover .nav{
@@ -166,13 +169,13 @@ header:hover .nav{
 }
 
 .logo {
-    margin-left: 50px;
+/*    margin-left: 50px;*/
     position: relative;
     display: inline-block;
     height: 0;
     transform: scale(.5);
     top: 15px;
-    padding-right: 56%
+/*    padding-right: 58%*/
 }
 
 /*grid section*/
@@ -212,9 +215,11 @@ header:hover .nav{
         '1 2';
     margin-left: 5%;
     margin-right: 5%;
+/*
     grid-gap: 7.5%;
     justify-self: center;
     align-content: center;
+*/
 }
 
 .print, .title3{
@@ -223,6 +228,7 @@ header:hover .nav{
     position: absolute;
     opacity: 0;
 }
+/*
 .series img{
     justify-content: center;
     align-content: center;
@@ -230,6 +236,7 @@ header:hover .nav{
     align-self: center;
     justify-self: center;
 }
+*/
 
 .gimg, .gimg1{
 /*    max-height:/ 100%;*/
@@ -283,10 +290,11 @@ footer {
     font-family: futura, sans-serif;
     font-size: .9em;
     font-weight: 100;
-    padding-left: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .fcol{
-    width: 20%;
+/*    width: 20%;*/
 }
 footer p{
 /*    width: 100%;*/
@@ -323,22 +331,24 @@ transition: background-color .3s ease-out, color .2s ease-out, transform .2s eas
 }
 
 /*RESPONSIVE RULES*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
+    /*GRIDS*/
+    .homegallery, .gallery, .web, .series{
+        display: block;
+    }
+    /*HEADER & FOOTER*/
+    .logo{margin: 0;left: 0%;position: absolute}
+    header{background: hsl(0, 0%, 12.5%);
+        height: 16%;
+    }
+    .nav{color: white; font-size: 1.5em}
+    footer{display: block; height: auto;padding-top: 20px;}
+    footer a,footer p{padding-top: 10px;padding-bottom: 10px;font-size:2em}
+    main{margin-top: 100px}
+    /*TYPOGRAPHY*/
+    h2,h4,p,li{
+        margin-left: 10%;
+    }
+    p, li{font-size: 1.2em}
     
-    .homegallery, .gallery, .web{
-        grid-template-columns: 100%;
-        grid-template-rows: ;
-        grid-template-areas: 
-            'top'
-            'midle'
-            'nextmidle'
-            'anmidle';
-            
-    }
-    .series{
-        padding-top: 500px;
-        grid-template-columns: 100%;
-    }
-    .logo{margin: 0;left: 76px}
-    header{height: 150px;}
 }
