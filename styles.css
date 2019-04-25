@@ -331,7 +331,7 @@ transition: background-color .3s ease-out, color .2s ease-out, transform .2s eas
 }
 
 /*RESPONSIVE RULES*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     /*GRIDS*/
     .homegallery, .gallery, .web, .series{
         display: block;
